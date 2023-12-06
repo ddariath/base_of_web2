@@ -1,0 +1,129 @@
+* {
+    font-family: Verdana;
+}
+
+body {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: aliceblue;
+    font-size:14px;
+}
+
+header {
+    text-align: center;
+    color: royalblue;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0;
+}
+
+main{
+    padding-top: 20px;
+}
+
+section {
+    min-height: 500px;
+}
+
+/*********** flexbox CSS ************/
+section {
+    /*Контейнер*/
+    display: flex;
+    /*главная ось*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*поперечная ось */
+    align-items: center;
+}
+
+
+article {
+    /*width: 350px;*/
+    flex-basis:350px;
+    padding: 10px;
+    margin: 20px;
+    }
+
+
+.order_align-self {
+    order:0;
+    align-self: flex-end
+    /*
+    order:1;  - порядок 0- высший
+    align-self: flex-start; поперечн.локальн. выравнив
+    */
+}
+
+
+.basis_grow_shrink {
+    flex-grow:0;
+    flex-shrink:0;
+    /*
+    flex-basis:350px;
+    flex-grow:1; - растяжение
+    flex-shrink:1;  - сжатие
+    */
+}
+
+.subtitle {
+    text-align: center;
+    color: royalblue;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.menu {
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+.notactive{
+    object-position: center;
+    color: black;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.active{
+    object-position: center;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.maintext {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 15px;
+    font-size: 20;
+}
+
+div.card {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 330px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-width: 1px;
+    border: 3px solid cornflowerblue;
+    border-radius:8px;
+}
+
+div.text {
+    padding: 10px;
+}
+
+.nice_form {
+    width: 100%;
+    background-image: url("../imgs/pattern.jpg");
+}
+

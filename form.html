@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>анкета</title>
+     <link href="./styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="c5d9ed">
+<header>
+<h1 class="title">Сонник</h1>
+<h2 class="subtitle">Что тебе приснилось?</h2>
+</header>
+<main>
+<table class="menu">
+    <tbody>
+    <tr>
+        <td class="notactive"><a href="index.html"><img src="imgs/home2.png"></a></td>
+        <td class="notactive"><a href="good.html">Узнать хорошее толкование</a></td>
+        <td class="notactive"><a href="bad.html">Узнать нехорошее толкование</a></td>
+        <td class="active">Заказать толкование сна</td>
+        <td class="notactive"><a href="extra.html">Extra</a></td>
+    </tr>
+    </tbody>
+</table>
+
+<p class = "maintext">Опишите свой сон, оставьте свои контакты, и наши специалисты отправят вам разбор.</p>
+<form
+      action="https://www.bing.com/search?"
+      name="UserInput"
+      target="_blank"
+      method="get"
+    >
+    <input type="hidden" name="q" value="search">
+    <table class="nice_form">
+        <tbody>
+        <tr>
+            <td><p style="color: white;">Как вас зовут?</p></td>
+            <td><p style="color: white;">Пол:</p></td>
+            <td><p style="color: white;">Сколько вам лет?</p></td>
+            <td><p style="color: white;">Как с вами связаться?</p></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="user" value="Дарья" id="name"></td>
+            <td>
+                <input type="radio" id="fem" name="sex" value="fem" checked><label for="fem" style="color: white;">жен</label>
+                <br><input type="radio" id="mal" name="sex" value="mal"><label for="mal" style="color: white;">муж</label>
+            </td>
+            <td><input type="number" name="age" value="20" id="age"></td>
+            <td>
+                <input type="email" name="email" id="email" value="pochta@email.com">
+                <br><input type="tel" name="phone" id="phone" value="89199199919"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p class="maintext">Ваш сон:
+    <br><textarea class="form" rows="10" cols="80" name="dreamdescr" placeholder="опишите свой сон"></textarea>
+
+    <br><input type="reset" name="reset" value="Очистить">
+    <input type="submit" name="submit" value="Отправить">
+</form>
+</div>
+</main>
+</body>
+</html>
